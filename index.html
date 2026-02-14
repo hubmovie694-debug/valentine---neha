@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Miss Neha ❤️</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#ff4d6d,#ff8fab,#ffb3c6);
+  color:white;
+  text-align:center;
+  overflow:hidden;
+}
+
+.page{
+  display:none;
+  padding:30px;
+  animation:fade 1.5s ease;
+}
+
+button{
+  padding:12px 25px;
+  font-size:16px;
+  border:none;
+  border-radius:25px;
+  margin:15px;
+  cursor:pointer;
+  background:white;
+  color:#ff4d6d;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+}
+
+h1{
+  margin-top:40px;
+  text-shadow:0 0 20px white;
+}
+
+@keyframes fade{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Floating Hearts */
+.heart{
+  position:absolute;
+  color:white;
+  font-size:20px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh); opacity:1;}
+  to{transform:translateY(-10vh); opacity:0;}
+}
+
+/* Fireworks canvas */
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  pointer-events:none;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<script>
+// Floating hearts
+for(let i=0;i<25;i++){
+  let heart=document.createElement("div");
+  heart.innerHTML="❤️";
+  heart.className="heart";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.animationDuration=(3+Math.random()*5)+"s";
+  document.body.appendChild(heart);
+}
+</script>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1" style="display:block;">
+<h1>Happy Valentine's Day Miss Neha ❤️</h1>
+<p>
+Aaj ka din sirf pyaar ka nahi…  
+Balki mere dil ki sabse khoobsurat feeling ka din hai…  
+Aur wo feeling ho tum 💕
+</p>
+<button onclick="nextPage(2)">Next ➜</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+<h1>Mera Pyaar Sirf Tumhare Liye 💖</h1>
+<p>
+Miss Neha,  
+Jab se tum meri zindagi me aayi ho, sab kuch badal gaya hai…  
+Har subah tumhari yaadon se shuru hoti hai  
+Aur har raat tumhare khayalon me khatam hoti hai.  
+
+Tum sirf meri mohabbat nahi ho,  
+Tum meri aadat ho… meri sukoon ho… meri dua ho…  
+Aur meri har khushi ka reason ho 🌸
+</p>
+<button onclick="nextPage(3)">Next ➜</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+<h1>Miss Neha… Will You Be My Valentine? 💍</h1>
+<button onclick="nextPage(4)">Yes ❤️</button>
+<button id="no1" onmouseover="moveButton('no1')">No 😜</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+<h1>Kya Tum Hamesha Mera Saath Dogi? 💞</h1>
+<button onclick="nextPage(5)">Yes Forever ❤️</button>
+<button id="no2" onmouseover="moveButton('no2')">No 😝</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+<h1>10 Shayari Sirf Miss Neha Ke Liye 💌</h1>
+<p>
+1. Tum meri dhadkan ho ❤️<br><br>
+2. Tum meri muskaan ho 😊<br><br>
+3. Tum meri dua ho 🤲<br><br>
+4. Tum meri roshni ho ✨<br><br>
+5. Tum meri taqdeer ho 💫<br><br>
+6. Tum meri aadat ho 💕<br><br>
+7. Tum meri zindagi ho 🌍<br><br>
+8. Tum meri kahani ho 📖<br><br>
+9. Tum meri duniya ho 💞<br><br>
+10. Tum sirf meri ho ❤️
+11. Teri muskaan se roshan hai meri duniya saari,
+Tu hi meri khushi, tu hi meri zimmedaari.
+Har pal tujhe chaaha hai dil ne beintehaa,
+Meri har dua me bas naam hai tera — Neha ❤️
+
+🌹
+Dil ki kitaab ka sabse khoobsurat panna ho tum,
+Mere jeene ki wajah aur mera sapna ho tum.
+Agar Rab se kuch maangna ho mujhe kabhi,
+To har janam me sirf meri rehna ho tum 💞
+
+✨
+Na chaand ki chahat, na sitaron ki farmaish,
+Mujhe bas teri mohabbat ki hai khwahish.
+Jab tak saanse chalengi is dil me,
+Tab tak tera hi naam rahega meri har dhadkan me ❤️
+
+💌
+Teri aankhon me jo sukoon milta hai,
+Wo kahin aur nahi milta.
+Tere saath jo ehsaas milta hai,
+Wo zindagi bhar ke liye kaafi hai 💕
+</p>
+<button onclick="nextPage(6)">Next ➜</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+<h1>My Love Speech For You 💗</h1>
+<p>
+Miss Neha…  
+Main wada karta hoon ki har mushkil me tumhara haath pakad kar chalunga.  
+Har aansu ko apni muskaan se mitaunga.  
+Main tumhe sirf aaj nahi… har din, har pal, har saans me chahunga.  
+
+Jab tak meri saanse chalengi… tab tak mera pyaar tumhare naam rahega ❤️
+  Tum meri zindagi ka wo hissa ho
+jiske bina sab kuch adhoora lagta hai.
+
+💌
+Valentine sirf ek din nahi,
+tumhare saath har din special hai.
+
+🌹
+Tumhari muskaan meri duniya hai,
+aur tum meri har dua ka jawab.
+
+✨
+Jab tum saath hoti ho,
+to har pal perfect lagta hai.
+
+💞
+Mujhe tumse pyaar wajah se nahi,
+bas tum hone se hai.
+
+❤️
+Agar zindagi ek safar hai,
+to main har mod pe tumhara haath pakadna chahta hoon.
+
+🌸
+Tum meri aadat nahi,
+meri zarurat ho.
+
+💋
+Is Valentine par bas itna kehna hai —
+tum ho to main ho.
+</p>
+<button onclick="nextPage(7)">Final ➜</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+<h1>I LOVE YOU NEHA ❤️</h1>
+<h2>Forever Yours 💞</h2>
+<h2>😘😘😘</h2>
+</div>
+
+<script>
+function nextPage(page){
+  let pages=document.querySelectorAll('.page');
+  pages.forEach(p=>p.style.display='none');
+  document.getElementById('page'+page).style.display='block';
+
+  if(page===7){
+    startFireworks();
+  }
+}
+
+function moveButton(id){
+  let btn=document.getElementById(id);
+  btn.style.position="absolute";
+  btn.style.top=Math.random()*400+"px";
+  btn.style.left=Math.random()*300+"px";
+}
+
+/* FIREWORKS */
+const canvas=document.getElementById("fireworks");
+const ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+function createFirework(){
+  let x=Math.random()*canvas.width;
+  let y=Math.random()*canvas.height/2;
+  for(let i=0;i<60;i++){
+    particles.push({
+      x:x,
+      y:y,
+      speedX:(Math.random()-0.5)*8,
+      speedY:(Math.random()-0.5)*8,
+      life:100,
+      color:`hsl(${Math.random()*360},100%,60%)`
+    });
+  }
+}
+
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach((p,index)=>{
+    p.x+=p.speedX;
+    p.y+=p.speedY;
+    p.life--;
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,2,0,Math.PI*2);
+    ctx.fillStyle=p.color;
+    ctx.fill();
+    if(p.life<=0){
+      particles.splice(index,1);
+    }
+  });
+  requestAnimationFrame(animate);
+}
+
+function startFireworks(){
+  setInterval(createFirework,700);
+}
+
+animate();
+</script>
+
+</body>
+</html>
